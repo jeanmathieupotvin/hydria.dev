@@ -1,0 +1,35 @@
+// _sections-index.scss
+// Component: styles of specific index page's sections
+
+
+@use 'variables' as v;
+
+
+// Section manifesto -----------------------------------------------------------
+
+.manifesto {
+  color: v.$white;
+
+  background-color: v.$blue;
+}
+
+// Section contact -------------------------------------------------------------
+
+.contact {
+  color: v.$white;
+
+  background-color: v.$grey;
+
+  &--email {
+    color: v.$white;
+    text-decoration: none;
+
+    transition: 0.3s all ease-out;
+
+    &:hover,
+    &:active {
+      color: v.$yellow;
+      text-decoration: underline;
+    }
+  }
+}

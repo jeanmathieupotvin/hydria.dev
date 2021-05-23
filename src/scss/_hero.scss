@@ -1,0 +1,118 @@
+// _hero.scss
+// Component: full viewport hero background
+
+
+@use 'variables' as v;
+@use 'containers' as c;
+
+
+// Hero introduction container -------------------------------------------------
+
+.hero {
+  @extend %flex-col-center;
+
+  position: relative;
+
+  height: 100vh;
+
+  color: v.$white;
+  text-align: center;
+
+  background-color: v.$blue;
+
+  // Contents inner section ----------------------------------------------------
+
+  &--inner {
+    @include c.contents-area(v.$area-contents-std, 8rem);
+
+    padding: 1.5rem;
+  }
+
+  // Title ---------------------------------------------------------------------
+
+  &--title {
+    margin-top: 2rem;
+
+    font-size: 8rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+
+    &--ia {
+      color: v.$indigo;
+    }
+
+    @media only screen and (max-width: v.$threshold-ui-mobile) {
+      & {
+        font-size: 5rem;
+      }
+    }
+  }
+
+  // One-liner -----------------------------------------------------------------
+
+  &--subtitle {
+
+    margin-top: 4rem;
+    padding: 1rem;
+
+    font-size: 4rem;
+    font-weight: 700;
+
+    @media only screen and (max-width: v.$threshold-ui-mobile) {
+      & {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  // Small caret down symbol ---------------------------------------------------
+
+  &--down {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+
+    font-size: 5rem;
+
+    transform: translate(-50%, 0); // Recenter item on its centered position.
+
+    a {
+      color: v.$white;
+
+      &:hover,
+      &:active {
+        color: v.$indigo;
+      }
+    }
+  }
+}
+
+// Hero banner to be embedded in other sections --------------------------------
+
+.hero-banner {
+  @extend %flex-col-center;
+
+  height: 75vh;
+
+  color: v.$white;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+
+  @media only screen and (max-width: v.$threshold-ui-mobile) {
+    & {
+      font-size: 2rem;
+    }
+  }
+
+  &--inner {
+    @include c.contents-area(v.$area-contents-std, 8rem);
+
+    padding: 1.5rem;
+  }
+
+  &--keyword {
+    color: v.$indigo;
+    background-color: v.$yellow;
+  }
+}

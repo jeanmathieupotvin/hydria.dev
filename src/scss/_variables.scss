@@ -1,0 +1,35 @@
+// _variables.scss
+// Variables: global variables scoped to the project
+
+// Colors.
+$white: #ffffff;
+$black: #000000;
+$grey: #43454d;
+$grey-dark: #2b2d32;
+$blue: #42aff2;
+$blue-light: rgb(66, 175, 242, 0.1);
+$yellow: #f9f871;
+$indigo: #1B294d;
+
+// Fonts.
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-size: 14px;
+$base-font-size-small: 12px;
+$base-font-size-xsmall: 10px;
+
+// Thresholds.
+$threshold-font-size-small: 800px;
+$threshold-font-size-xsmall: 350px;
+$threshold-ui-mobile: 700px;
+$threshold-expertises-flex: 1000px;
+
+// Areas for contents.
+$area-contents-std: 80%;
+$area-contents-mobile: 90%;
+$area-expertises-std: 95%;
+$area-expertises-flex: 70%;
+$area-expertises-mobile: 90%;
+
+// Vertical padding.
+$padding-section-std: 6rem;
+$padding-section-mobile: 4rem;

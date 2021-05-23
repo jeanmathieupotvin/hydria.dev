@@ -1,0 +1,37 @@
+// _footer.scss
+// Component: basic footer
+
+
+@use 'variables' as v;
+@use 'containers' as c;
+
+
+.footer {
+  color: v.$white;
+  font-size: 1.5rem;
+
+  background-color: v.$grey-dark;
+
+  &--inner {
+    @extend %flex-col;
+    @include c.contents-area(v.$area-contents-std, 1rem);
+
+    a {
+      color: v.$white;
+      text-decoration: none;
+
+      transition: 0.3s all ease-out;
+
+      &:hover,
+      &:active {
+        color: v.$yellow;
+        text-decoration: underline;
+      }  
+    }
+  }
+
+  &--copyright {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}

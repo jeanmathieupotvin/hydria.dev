@@ -1,0 +1,91 @@
+// _expertise.scss
+// Component: expertise card
+
+
+@use 'variables' as v;
+@use 'containers' as c;
+
+
+// Container for multiple expertises -------------------------------------------
+
+.expertises {
+  @extend %flex-row;
+  @include c.contents-area(v.$area-expertises-std, v.$padding-section-std);
+
+  align-items: stretch; // Force cards to have same height.
+
+  @media only screen and (max-width: v.$threshold-expertises-flex) {
+    & {
+       // Limit width of expertises.
+      @include c.contents-area(v.$area-expertises-flex, v.$padding-section-mobile);
+      
+      flex-flow: column; // Favor flex column instead of flex row.
+    }
+  }
+
+  @media only screen and (max-width: v.$threshold-ui-mobile) {
+    & {
+      @include c.contents-area(v.$area-expertises-mobile, v.$padding-section-mobile);
+    }
+  }
+}
+
+// Container for one expertise -------------------------------------------------
+
+.expertise {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+
+  border: 1px solid v.$blue;
+  border-radius: 3px;
+
+  &:hover,
+  &:active {
+    background-color: v.$blue-light;
+  }
+
+  &--icon {
+    color: v.$blue;
+    font-size: 8rem;
+    text-align: center;
+  }
+
+  &--title {
+    color: v.$blue;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  &--subtitle {    
+    color: v.$indigo;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &--desc {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  &--bullets {
+    margin: auto;
+    
+    font-size: 1.25rem;
+  }
+
+  @media only screen and (max-width: v.$threshold-expertises-flex) {
+    & {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-left: unset;
+      margin-right: unset;
+    }
+  }
+}

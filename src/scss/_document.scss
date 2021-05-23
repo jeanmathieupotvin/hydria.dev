@@ -1,0 +1,33 @@
+// _document.scss
+// Component: document-level adjustments
+
+@use 'variables' as v;
+
+
+// Root ------------------------------------------------------------------------
+
+html {
+  font-size: v.$base-font-size;
+  font-family: v.$base-font-family;
+
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: v.$threshold-font-size-small) {
+  html {
+    font-size: #{v.$base-font-size-small};
+  }
+}
+
+@media only screen and (max-width: v.$threshold-font-size-xsmall) {
+  html {
+    font-size: #{v.$base-font-size-xsmall};
+  }
+}
+
+// Body ------------------------------------------------------------------------
+
+body {
+  margin: 0;
+  padding: 0;
+}

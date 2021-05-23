@@ -1,0 +1,26 @@
+// _utils.scss
+// Miscellenaeous: various small utility classes
+
+
+@use 'variables' as v;
+
+
+// Colors ----------------------------------------------------------------------
+
+.blue {
+  color: v.$blue;
+}
+
+.indigo {
+  color: v.$indigo;
+}
+
+.yellow {
+  color: v.$yellow;
+}
+
+// Utilities -------------------------------------------------------------------
+
+.hide {
+  display: none;
+}

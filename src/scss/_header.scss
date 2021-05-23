@@ -1,0 +1,125 @@
+// _header.scss
+// Component: basic header and navigation menu
+
+
+@use 'variables' as v;
+@use 'containers';
+
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+
+  background-color: v.$white;
+
+  box-shadow: rgb(0 0 0 / 25%) 0px 2px 3px;
+
+  // Contents inner section ----------------------------------------------------
+
+  &--inner {
+    @extend %flex-row-stretch;
+
+    margin: auto;
+    padding: 0.5rem 2rem;
+  }
+
+  // Logo ----------------------------------------------------------------------
+
+  &--logo {
+    @extend %flex-row;
+  }
+
+  &--logo-name {
+    margin-left: 1rem;
+
+    color: v.$blue;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+    &--ia {
+      color: v.$indigo;
+    }
+  }
+
+  // Navigation menu -----------------------------------------------------------
+
+  &--nav {
+    justify-self: end;
+
+    &--link {
+      margin-left: 1rem;
+
+      color: v.$blue;
+      font-size: 1.25rem;
+      text-decoration: none;
+
+      transition: 0.3s all ease-out;
+
+      &:hover,
+      &:active,
+      &--active {
+        color: v.$indigo;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+
+    @media only screen and (max-width: v.$threshold-ui-mobile) {
+      & {
+        // Hide nav menu on mobiles. Replaced by mobile menu.
+        display: none;
+      }
+
+      &--link {
+        // Change behavior of links on mobiles. This is because these
+        // links are used in mobile nav menu. See &--mobile-nav below.
+        width: 100%;
+
+        margin: 0;
+        padding: 0.75rem 0;
+
+        border-top: 1px solid v.$blue;
+      }
+    }
+  }
+
+  // Mobile navigation menu ----------------------------------------------------
+
+  &--mobile-nav {
+    @extend %flex-col;
+
+    display: none; // Hidden by default.
+
+    padding: 1rem 2rem;
+
+    & > :last-child {
+      border-bottom: 1px solid v.$blue;
+    }
+
+    @media only screen and (max-width: v.$threshold-ui-mobile) {
+      & {
+        // Show nav menu on mobiles.
+        display: flex;
+      }
+    }
+  }
+
+  // Mobile navigation menu button ---------------------------------------------
+
+  &--mobile-btn {
+    display: none; // Hidden by default.
+
+    color: v.$indigo;
+    font-size: 2rem;
+
+    @media only screen and (max-width: v.$threshold-ui-mobile) {
+      & {
+        // Show nav menu's button on mobiles.
+        display: block;
+      }
+    }
+  }
+}

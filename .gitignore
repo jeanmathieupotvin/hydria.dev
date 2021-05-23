@@ -1,0 +1,12 @@
+# Archives
+.archive/
+
+# Project's build
+# Can be generated anytime via npm run build
+build/
+
+# Dependencies
+node_modules/
+
+# Workspaces
+*.code-workspace

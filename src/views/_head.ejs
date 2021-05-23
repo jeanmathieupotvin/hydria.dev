@@ -1,0 +1,73 @@
+<head>
+  <meta charset="utf-8" />
+
+  <title>Hydria</title>
+
+  <!-- TODO: integration of GA [assignee: JMP] -->
+  <!-- TODO: integration of HTML minifier [assigne: JMP] -->
+
+  <!-- Meta information -->
+  <meta name="author" content="<%= name %>" />
+  <meta name="description" content="<%= description %>" />
+  <meta name="keywords" content="<%= keywords %>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#ffeeca" />
+  <meta name="msapplication-TileColor" content="#ffeeca" />
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="<%= name %>" />
+  <meta itemprop="description" content="<%= description %>" />
+  <meta itemprop="image" content="<%= `${host.concat(logoPath)}` %>" />
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:title" content="<%= name %>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="<%= host %>" />
+  <meta property="og:image" content="<%= `${host.concat(logoPath)}` %>" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="<%= name %>'s logo" />
+  <meta property="og:description" content="<%= description %>" />
+  <meta property="og:locale" content="fr_CA" />
+  <meta property="og:site_name" content="<%= siteName %>" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="<%= name %>" />
+  <meta name="twitter:description" content="<%= description %>" />
+  <meta name="twitter:image" content="<%= `${host.concat(logoPath)}` %>" />
+
+  <!-- Manifest -->
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Scripts -->
+  <script
+    src="https://kit.fontawesome.com/1a9c86e038.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="<%= script %>" defer></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="<%= stylesheet %>" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+  />
+
+  <!-- Other assets -->
+  <link
+    rel="mask-icon"
+    type="image/svg"
+    href="/images/safari-pinned-tab.svg"
+    color="#2c385e"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/images/apple-touch-icon.png"
+  />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-16.png" />
+</head>

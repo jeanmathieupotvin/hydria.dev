@@ -1,0 +1,38 @@
+// _sections.scss
+// Component: general section container
+
+
+@use 'variables' as v;
+@use 'containers' as c;
+
+
+.section {
+  &--inner {
+    @include c.contents-area(v.$area-contents-std, v.$padding-section-std);
+
+    font-size: 1.5rem;
+
+    & > :last-child {
+      margin-bottom: 0;
+    }
+
+    @media only screen and (max-width: v.$threshold-ui-mobile) {
+      & {
+        @include c.contents-area(v.$area-contents-mobile, v.$padding-section-mobile);
+      }
+    }
+  }
+
+  &--title {
+    margin-bottom: 3rem;
+
+    font-size: 5rem;
+    font-weight: 700;
+
+    @media only screen and (max-width: v.$threshold-ui-mobile) {
+      & {
+        font-size: 4rem;
+      }
+    }
+  }
+}
