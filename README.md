@@ -17,7 +17,9 @@ The static website of Hydria.
 
 # Environment
 
-In order to be able to modify and rebuild the website, users must have [Node.js](https://nodejs.dev/) (>= 14.16.0) properly installed on their computer, along with `npm` (>= 6.14.0). On Windows, the underlying binaries must be properly added to Windows' `PATH` environment variable. Aside from that, only regular `npm` packages are required.
+In order to be able to modify and rebuild the website, users must have [Node.js](https://nodejs.dev) (>= 14.16.0) properly installed on their computer, along with `npm` (>= 6.14.0). On Windows, the underlying binaries must be properly added to the `PATH` environment variable. Aside from that, only regular `npm` packages are required.
+
+Furthermore, [Dart Sass](https://sass-lang.com) is required to compile SCSS code to regular CSS. On Windows, its underlying binaries must also be properly added to the `PATH` environment variable.
 
 # Installation
 
