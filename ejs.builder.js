@@ -46,9 +46,11 @@ outDir = path.resolve(outDir);
  */
 
 // List relative inputs.
-let relInputs = fs.readdirSync(srcDir).filter(f => f.indexOf('.ejs'));
+let relInputs = fs.readdirSync(srcDir).filter(f => f.indexOf('.ejs') > -1);
 
 // Remove partials from inputs if partialsBuild is false.
+// TODO: make this feature recursive, so that it can build
+// all .ejs files in sub-folders [assignee: JMP].
 if (!partialsBuild) {
     relInputs = relInputs.filter(f => f.indexOf(partialsPrefix) === -1);
 }
