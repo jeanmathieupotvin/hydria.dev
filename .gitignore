@@ -3,7 +3,10 @@
 
 # Project's build
 # Can be generated anytime via npm run build
-build/
+# Do not ignore config files
+build/*
+!build/*.xml
+!build/*.webmanifest
 
 # Dependencies
 node_modules/
