@@ -32,7 +32,7 @@ git clone https://github.com/jeanmathieupotvin/hydria.dev.git
 Then, install developers' dependencies. These allows you to build the whole website. 
 
 ```bash
-npm run install
+npm install
 ```
 
 No packages are required in production.
