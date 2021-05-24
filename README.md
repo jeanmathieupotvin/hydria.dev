@@ -69,9 +69,20 @@ A couple of `npm` scripts are available to the developers. You typically only ne
 * `watch`: wrapper command to run `css:watch`, `html:watch`, `js:watch`, `images:watch` at the same time and in the same process.
 * `build`: wrapper command to run `css:build`, `html:build`, `js:build`, `images:build` at the same time and in the same process.
 
+# Working on the website
+
+The actual website is located in `build/`. All files in `src/` are compiled to this location. Compilation is handled by `npm` scripts. Developers never have to write code in `build/`, unless the configuration files `browserconfig.xml` and `site.webmanifest` must be changed. Actual code must be saved in `src/`. 
+
+The current *toolchain* relies on the following tools to compile the website.
+
+* [EJS](https://ejs.co/) is the HTML view model.
+* [SCSS](https://sass-lang.com/documentation/syntax) is the preferred CSS syntax.
+* [Webpack](https://webpack.js.org/) is the JS bundler.
+* [imagemin](https://www.npmjs.com/package/imagemin) is the images optimizer. 
+
 # Architecture
 
-The current architecture relies on this simple structure.
+The current architecture relies on this simple structure. It is inspired from this [great tutorial](https://wweb.dev/blog/how-to-create-static-website-npm-scripts/). The purpose is to keep things simple, and avoid big front-end frameworks (for now).
 
 ```
 root
@@ -115,6 +126,10 @@ scripts above.
 # License
 
 **Creative Commons Zero v1.0 Universal** (CC0 1.0 Universal). Essentially, this means you can reuse everything in this repository (the code, the files, etc.), but not the trademark itself. See [LICENSE](https://github.com/jeanmathieupotvin/hydria.dev/blob/main/LICENSE) for more information.
+
+# Bugs and feedback
+
+Submit them [here](https://github.com/jeanmathieupotvin/hydria.dev/issues/new). Thank you!
 
 # Hydria's TODOs
 
