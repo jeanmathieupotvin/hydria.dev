@@ -1,0 +1,29 @@
+<header class="header">
+  <div class="header--inner">
+    <div class="header--logo">
+      <a href="/">
+        <img
+          src="/images/logo-picto-blue.svg"
+          alt="Logo d'Hydria"
+          height="48"
+        />
+      </a>
+      <a href="/" class="header--logo-name">
+        Hydr<span class="header--logo-name--ia">ia</span>
+      </a>
+    </div>
+
+    <!-- Full width navigation menu -->
+    <nav class="header--nav"><%- include("_header-links"); %></nav>
+
+    <!-- Mobile navigation menu button -->
+    <div class="header--mobile-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+
+  <!-- Mobile navigation menu -->
+  <nav class="header--mobile-nav hide">
+    <%- include("_header-links"); %>
+  </nav>
+</header>
