@@ -39,7 +39,7 @@ No packages are required in production.
 
 # Serving
 
-This website can be served by any `HTTP(S)` server. In production, it is currently hosted by [NGINX](https://www.nginx.com/). It can be served locally on port 3000 via `npm` command `serve`.
+This website can be served by any `HTTP(S)` server. In production, it is currently served by [NGINX](https://www.nginx.com/). It can be served locally on port 3000 via `npm` command `serve`.
 
 ```bash
 npm run serve
