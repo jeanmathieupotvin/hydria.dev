@@ -76,6 +76,12 @@
 
     transform: translate(-50%, 0); // Recenter item on its centered position.
 
+    @media only screen and (max-width: v.$threshold-ui-mobile) {
+      & {
+        bottom: 10vh;
+      }
+    }
+
     a {
       color: v.$white;
 
