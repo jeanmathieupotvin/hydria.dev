@@ -1,3 +1,9 @@
+<!-- logo: start -->
+<div align="center">
+    <img src="https://github.com/jeanmathieupotvin/hydria.dev/blob/main/src/images/logo-192.png" >
+</div>
+<!-- logo: end -->
+
 # hydria.dev
 
 <!-- badges: start -->
