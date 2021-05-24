@@ -107,3 +107,14 @@ scripts above.
 # License
 
 **Creative Commons Zero v1.0 Universal** (CC0 1.0 Universal). Essentially, this means you can reuse everything in this repository (the code, the files, etc.), but not the trademark itself. See [LICENSE](https://github.com/jeanmathieupotvin/hydria.dev/blob/main/LICENSE) for more information.
+
+# Hydria's TODOs
+
+This section is only relevent to Hydria's contributors.
+
+1. Integrate a HTML minifier into the development pipeline.
+2. Google Analytics integration (this includes actual account's creation).
+3. Choose better keywords, and update `index.ejs` and `package.json`.
+4. Integrate latest version of manifest.
+5. Translate website to English.
+6. Make EJS builder more intelligent, so that it can properly compile all sub-directories in `src/views`.
