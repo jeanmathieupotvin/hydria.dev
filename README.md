@@ -120,7 +120,7 @@ root
     └── other files that could be useful, but that are not part of the build
 ```
 
-The files in `build/` are all ignored, excepted for configuration files that never change. These by-products can be generated anytime by using the proper `npm` scripts. See
+The files in `build/` are all ignored, excepted for configuration files that never change. These by-products can be generated anytime by using proper `npm` scripts. See
 scripts above.
 
 # License
@@ -142,3 +142,4 @@ This section is only relevent to Hydria's contributors.
 5. Translate website to English.
 6. Make EJS builder more intelligent, so that it can properly compile all sub-directories in `src/views`.
 7. Restructure `src/views` and anchors in views to better match a bilingual routing structure.
+8. Add accessibility support.
