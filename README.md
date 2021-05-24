@@ -124,3 +124,4 @@ This section is only relevent to Hydria's contributors.
 4. Integrate latest version of manifest.
 5. Translate website to English.
 6. Make EJS builder more intelligent, so that it can properly compile all sub-directories in `src/views`.
+7. Restructure `src/views` and anchors in views to better match a bilingual routing structure.
