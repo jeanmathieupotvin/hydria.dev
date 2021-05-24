@@ -21,7 +21,7 @@
     "hydria"
   ],
   "author": "Jean-Mathieu Potvin",
-  "license": "ISC",
+  "license": "Creative Commons Zero v1.0 Universal",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "browser-sync": "^2.26.14",
