@@ -66,8 +66,43 @@ A couple of `npm` scripts are available to the developers. You typically only ne
 The current architecture relies on this simple structure.
 
 ```
-Here.
+root
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+├── ejs.builder.js
+|   └── custom EJS builder; compiles all .ejs files in src/views into HTML files in build/
+├── ejs.config.js
+├── package-lock.json
+├── package.json
+├── webpack.config.js
+|
+├── src/
+│   ├── images/
+│   |   └── (unoptimized) images used by website 
+|   |
+│   ├── js/
+│   |   └── source JS scripts and modules; bundled into monolithic bundle scripts in build/javascripts/
+|   |
+│   ├── scss/
+│   |   └── SCSS partials and files; compiled into monolithic bundles in build/stylesheets/
+|   |
+│   └── views/
+│       ├── hiearchy matters; routing in build/ is derived from it
+│       └── EJS views; partials and webpages are compiled into real HTML files in build/
+|
+├── build/
+│   ├── browserconfig.xml
+|   ├── site.webmanifest
+│   └── build the rest with npm run build or npm run watch
+|
+└── etc/
+    └── other files that could be useful, but that are not part of the build
 ```
+
+The files in `build/` are all ignored, excepted for configuration files that never change. These by-products can be generated anytime by using the proper `npm` scripts. See
+scripts above.
 
 # License
 
