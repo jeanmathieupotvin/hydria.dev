@@ -45,10 +45,14 @@
     src="https://kit.fontawesome.com/1a9c86e038.js"
     crossorigin="anonymous"
   ></script>
-  <script src="<%= script %>" defer></script>
+  <% if (script) { %>
+    <script src= <%= script %> defer></script>
+  <% } %>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="<%= stylesheet %>" />
+  <% if (script) { %>
+    <link rel="stylesheet" href="<%= stylesheet %>" />
+  <% } %>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     rel="stylesheet"
