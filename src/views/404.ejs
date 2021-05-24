@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <%- include("_head.ejs", { 
+    name: "Hydria",
+    siteName: "hydria.dev",
+    description: "Des outils innovants pour s’attaquer au risque hydrologique",
+    keywords: "hydria",
+    host: "https://hydria.dev",
+    logoPath: "/images/logo-192.png",
+    stylesheet: "/stylesheets/errors.css", 
+    script: "/javascripts/bundle.js", 
+  }); %>
+
+  <body>
+    <%- include("_header.ejs"); %>
+
+    <main>
+      <section class="error bg-flood-3">
+        <div class="error--msg">Erreur <span class="error--code">4 0 4</span></div>
+        <div>Cette page n'existe pas.</div>
+      </section>
+    </main>
+    
+  </body>
+</html>
