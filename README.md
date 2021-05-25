@@ -131,9 +131,11 @@ scripts above.
 
 Submit them [here](https://github.com/jeanmathieupotvin/hydria.dev/issues/new). Thank you!
 
-# Hydria's TODOs
+# Hydria
 
 This section is only relevent to Hydria's contributors.
+
+## TODOs
 
 1. Integrate a HTML minifier into the development pipeline.
 2. Google Analytics integration (this includes actual account's creation).
@@ -143,3 +145,4 @@ This section is only relevent to Hydria's contributors.
 6. Make EJS builder more intelligent, so that it can properly compile all sub-directories in `src/views`.
 7. Restructure `src/views` and anchors in views to better match a bilingual routing structure.
 8. Add accessibility support.
+9. Consider switching to another HTML template engine, such as PostHTML. Should we also look into a popular front-end dev framework such as [Svelte](https://svelte.dev/)?
