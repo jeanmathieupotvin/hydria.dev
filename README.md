@@ -29,7 +29,7 @@ First, clone this repository.
 git clone https://github.com/jeanmathieupotvin/hydria.dev.git
 ```
 
-Then, install developers' dependencies. These allows you to build the whole website. 
+Then, install developers' dependencies. These allow you to build the whole website. 
 
 ```bash
 npm install
