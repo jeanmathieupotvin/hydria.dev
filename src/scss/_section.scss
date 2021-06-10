@@ -35,4 +35,17 @@
       }
     }
   }
+
+  &--email {
+    color: v.$white;
+    text-decoration: none;
+  
+    transition: 0.3s all ease-out;
+  
+    &:hover,
+    &:active {
+      color: v.$yellow;
+      text-decoration: underline;
+    }
+  }
 }
