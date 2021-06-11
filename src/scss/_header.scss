@@ -33,10 +33,11 @@
   }
 
   &--logo-name {
-    margin-left: 1rem;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
 
     color: v.$blue;
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     text-decoration: none;
 
     &--ia {
